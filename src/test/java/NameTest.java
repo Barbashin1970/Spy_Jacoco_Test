@@ -3,14 +3,14 @@ import org.junit.Test;
 
 public class NameTest {
 
-    private NameConverter nameConverter = new NameConverter();
+    private final NameConverter nameConverter = new NameConverter();
     @Test
-    public void getFullNameBySurenameAndName() {
+    public void getFullNameBySurnameAndName() {
         String expected = nameConverter.getFullName("Тамара", "Петрова");
         Assert.assertEquals(expected, "Петрова Тамара");
     }
     @Test
-    public void getFullNameByEmpty() {
+    public void getFullNameException() {
         try {
             String expected = nameConverter.getFullName(null, null);
             Assert.assertNull(expected);}
