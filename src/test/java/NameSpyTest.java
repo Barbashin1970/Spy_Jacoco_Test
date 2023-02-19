@@ -1,8 +1,8 @@
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.junit.MockitoJUnitRunner;
 import org.mockito.Mockito;
 import org.mockito.Spy;
+import org.mockito.junit.MockitoJUnitRunner;
 
 
 @RunWith(MockitoJUnitRunner.class)
@@ -17,8 +17,8 @@ public class NameSpyTest {
         // вызови тестируемый метод с параметром «Тамара»
         Mockito.verify(nameConverter, Mockito.times(1)).getFullName("Тамара", null);
         // проверь, что внутри ровно один раз
-//вызвался именно нужный метод
-// c нужными параметрами
+        //вызвался именно нужный метод
+        // c нужными параметрами
     }
 
     @Test
